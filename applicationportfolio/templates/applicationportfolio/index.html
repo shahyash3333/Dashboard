@@ -1,0 +1,62 @@
+<!doctype html>
+<HTML>
+	<HEAD>
+		<TITLE>Dashboard</TITLE>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  {% load staticfiles %}
+        <link rel="stylesheet" href="{% static 'applicationportfolio/custom.css' %}">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/highcharts-more.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+        {% load staticfiles %}
+<script src="{% static 'applicationportfolio/customchart.js' %}"></script>
+
+	</HEAD>
+	<BODY>
+		<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+			  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			  </button>
+			  <a class="navbar-brand" href="#myPage">Dashboard</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+			  <ul class="nav navbar-nav navbar-right">
+				<li><a href="#myPage">Application View</a></li>
+				<li><a href="#band">Application Portfolio</a></li>
+			  </ul>
+			</div>
+		</div>
+		</nav>
+
+		<div id="tour" class="bg-1">
+  <div class="container">
+    <h3 class="text-center">CHARTS</h3>
+    <p class="text-center">Details charts of DevOps</p>
+
+    <div class="row text-center">
+      <div class="col-sm-6 col-md-6" style="width:100%">
+        <div id="container" class="panel panel-default"></div>
+      </div>
+	</div>
+	</br>
+	<div class="row text-center">
+	<div class="col-sm-4 col-md-4">
+         <div id="container1" class="panel panel-default"style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div></div>
+	<div class="col-sm-4 col-md-4"><div id="container2" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div></div>
+	<div class="col-sm-4 col-md-4"><div id="container3" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div></div>
+	  </div>
+	</div>
+  </div>
+		<footer class="text-center">
+		  <p>Dashboard  Testing</p>
+		</footer>
+	</BODY>
+</HTML>
